@@ -18,6 +18,7 @@ a:hover {
     cursor: pointer;
 }
 
+/*
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -26,6 +27,8 @@ a:hover {
     z-index: 100000;
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
+*/
+/*Ci-dessus, ID inexistant dans l'HTML et image inexistante dans le dossier IMG*/
 
 .bloc {
     width: 100%;
@@ -818,11 +821,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img/main-fluo-rose.jpg");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.jpg");
+    background-image: url("img/main-postit-vert.jpg");
 }
 
 @media (max-width: 1024px) {
