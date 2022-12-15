@@ -92,7 +92,9 @@ a:hover {
     left: 0;
     right: 0;
 }
-
+/* si le background fait 280px 280px alors on peut diminuer 
+la taille intrinsèque de l'image img/texture-paper.png jusque 300x300 
+car l'originale fait 560px X 560px */
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
@@ -778,7 +780,8 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    /* color: #F3976C!important; */
+    color: white!important;
 }
 
 .tc-black {
@@ -823,16 +826,43 @@ h4 {
 .bg-lines-h2-bg {
     background-image: url("img/lines-h2-bg.png");
 }
-
+/* les 2 images suivantes sont par défaut pour le mobile-first */
 .bg-banniere {
-    background-image: url("img/fluo-rose.jpg");
+    background-image: url("img/fluo-rose-mob.jpg");
 }
 
 .bg-presentation {
-    background-image: url("img/postit-vert.jpg");
+    background-image: url("img/postit-vert-mob.jpg");
 }
 
-@media (max-width: 1024px) {
+/* ici les 2 mêmes images optimisées pour les tablettes  */
+@media (max-width: 991px) and (min-width: 768px) {
+    .bg-banniere {
+        background-image: url("img/fluo-rose-tab.jpg");
+    }
+    
+    .bg-presentation {
+        background-image: url("img/postit-vert-tab.jpg");
+    }
+}
+
+/*  ici les 2 mêmes images optimisées pour les ordinateurs  */
+@media (min-width: 992px) {
+    .bg-banniere {
+        background-image: url("img/fluo-rose-desk.jpg");
+    }
+    
+    .bg-presentation {
+        background-image: url("img/postit-vert-desk.jpg");
+    }
+    
+
+}
+
+
+
+/* max-width: 1023px  et non 1024px*/
+@media (max-width: 1023px) {
     .bloc {
         padding-left: 20px;
         padding-right: 20px;
@@ -845,8 +875,8 @@ h4 {
         padding-right: 0;
     }
 }
-
-@media (max-width: 992px) and (min-width: 768px) {
+/* max-width: 991px: au lieu de 992px  */
+@media (max-width: 991px) and (min-width: 768px) {
     .navbar .nav {
         max-width: 80%
     }
@@ -854,8 +884,8 @@ h4 {
         max-width: 100%
     }
 }
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+/* max-device-width: 1023px  et non  1024px */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
