@@ -249,15 +249,18 @@
 								data-caption="Refonte d'un site web pour un journal local"
 								data-frame="snapshot-lb">
 								<!-- modification de la balise image -->
-								<img src="img/journal-desk.jpg" loading="lazy"
+								<picture> 
+									<source type="image/webp" media="(max-width: 767px)"  srcset="img/journal-mob.webp">
+									<source type="image/webp" media="(max-width: 991px)"  srcset="img/journal-tab.webp">
+									<source type="image/webp" media="(min-width: 992px)"  srcset="img/journal-desk.webp">
+									<source  media="(max-width: 767px)"  srcset="img/journal-mob.jpg">
+									<source  media="(max-width: 991px)"  srcset="img/journal-tab.jpg">
+									<source  media="(min-width: 992px)"  srcset="img/journal-desk.jpg">
+									<img src="img/journal-desk.jpg" loading="lazy"
 									class="img-responsive portfolio-thumb"
-									alt="Nombreux catalogues multicolores ouverts et disposés les uns sur les autres"
-									srcset="img/journal-desk.jpg 870w, img/journal-tab.jpg 680w, img/journal-mob.jpg 660w"
-									sizes="(min-width: 992px) 870px, (max-width: 991px) 680px, max-width: 767px) 660px" />
-
-								<!-- <img src="img/journal.jpg" loading="lazy"
-									alt="Nombreux catalogues multicolores ouverts et disposés les uns sur les autres"
-									class="img-responsive portfolio-thumb" /> -->
+									alt="Nombreux catalogues multicolores ouverts et disposés les uns sur les autres" /> 
+								</picture>
+								
 							</a>
 							<h3 class="mg-md text-center">
 								Refonte d'un site web pour un journal local
@@ -273,14 +276,17 @@
 								data-caption="Création d'un site web pour photographes"
 								data-frame="snapshot-lb">
 								<!-- modification de la balise image -->
-								<img src="img/photographes.jpg" loading="lazy"
+								<picture> 
+									<source type="image/webp" media="(max-width: 767px)"  srcset="img/photographes-mob.webp">
+									<source type="image/webp" media="(max-width: 991px)"  srcset="img/photographes.webp">
+									<source type="image/webp" media="(min-width: 992px)"  srcset="img/photographes.webp">
+									<source  media="(max-width: 767px)"  srcset="img/photographes-mob.jpg">
+									<source  media="(max-width: 991px)"  srcset="img/photographes.jpg">
+									<source  media="(min-width: 992px)"  srcset="img/photographes.jpg">
+									<img src="img/photographes.jpg" loading="lazy"
 									class="img-responsive portfolio-thumb"
-									alt="Une jeune photographe regarde à travers son appareil photo professionnel posé sur un trépied et muni d'un téléobjectif"
-									srcset="img/photographes.jpg 628w, img/photographes-mob.jpg 314w"
-									sizes="(min-width: 768px) 628px, (max-width: 767px) 314px" />
-								<!-- <img src="img/photographes.jpg" loading="lazy"
-									class="img-responsive portfolio-thumb"
-									alt="Une jeune photographe regarde à travers son appareil photo professionnel posé sur un trépied et muni d'un téléobjectif" /> -->
+									alt="Une jeune photographe regarde à travers son appareil photo professionnel posé sur un trépied et muni d'un téléobjectif." /> 
+								</picture>
 							</a>
 							<h3 class="mg-md text-center">
 								Création d'un site web pour photographes
