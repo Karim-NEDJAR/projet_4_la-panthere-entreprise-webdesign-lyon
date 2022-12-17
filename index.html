@@ -19,13 +19,19 @@
 		http://agencelapanthere.com
 		En supposant que ce soit la première, on devrait  insérer ici la balise canonique ainsi:
 		<link rel="canonical" href="https://www.agencelapanthere.com " />   	 -->
+		<link rel="preload" href="./css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
+		<link rel="preload" href="./css/font-awesome.min.css" as="style" onload="this.rel='stylesheet'">
+		<link rel="preload" href="./css/et-line.min.css" as="style" onload="this.rel='stylesheet'">
+		<link rel="preload" href="style.min.css" as="style" onload="this.rel='stylesheet'">
 
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+		<!-- ces  fichiers css ont été minifiés (présence de l'infixe .min). Idem pour les .JS   -->
+
+	<!-- <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
-	<!-- ces trois précédents fichiers css ont été minifiés (présence du suffixe -min) ainsi que les .JS ci-dessous  -->
-	<link rel="stylesheet" type="text/css" href="style.min.css">
-	<!-- ## style.css placé en dernier  -->
+	<link rel="stylesheet" type="text/css" href="style.min.css"> -->
+	
+	
 	<script defer src="./js/jquery-2.1.0.min.js" ></script>
 	<script defer src="./js/bootstrap.min.js" ></script>
 	<script defer src="./js/blocs.min.js" ></script>
