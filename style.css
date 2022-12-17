@@ -827,6 +827,7 @@ h4 {
     background-image: url("img/lines-h2-bg.png");
 }
 /* les 2 images suivantes sont par défaut pour le mobile-first */
+
 .bg-banniere {
     background-image: url("img/fluo-rose-mob.jpg");
 }
