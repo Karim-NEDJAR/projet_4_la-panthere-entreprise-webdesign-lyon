@@ -92,9 +92,9 @@ a:hover {
     left: 0;
     right: 0;
 }
-/* si le background fait 280px 280px alors on peut diminuer 
-la taille intrinsèque de l'image img/texture-paper.png jusque 300x300 
-car l'originale fait 560px X 560px */
+/* si l'image "img/texture-paper.png"  est affichée en  280px sur 280px alors 
+on peut sans dommage diminuer sa taille intrinsèque jusque 300x300, 
+ l'originale faisant 560px X 560px */
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
@@ -875,7 +875,7 @@ h4 {
         padding-right: 0;
     }
 }
-/* max-width: 991px: au lieu de 992px  */
+/* max-width: 991px: au lieu de 992px correction effectuée */
 @media (max-width: 991px) and (min-width: 768px) {
     .navbar .nav {
         max-width: 80%
