@@ -8,35 +8,51 @@
 	<meta name="viewport"
 		content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
-	<!-- remplacement de favicon.jpg en favicon.ico, de  image/png en   image/x-icon, et suppression de shortcut parmi les valeurs de rel -->
+	<!-- remplacement de favicon.jpg en favicon.ico, de  image/png en   image/x-icon, 
+		et suppression de shortcut parmi les valeurs de rel -->
 
+	<!-- les  fichiers css et js ont été minifiés (présence de .min).    -->
 	<script src="./js/jquery-2.1.0.min.js" defer></script>
 	<script src="./js/bootstrap.min.js" defer></script>
 	<script src="./js/blocs.min.js" defer></script>
 	<script src="./js/jqBootstrapValidation.min.js" defer></script>
-	<script src="./js/formHandler.min.js" defer ></script>
+	<script src="./js/formHandler.min.js" defer></script>
 
-	<!-- Les  précédents fichiers css  et JS ont été minifiés (présence du suffixe -min)  -->
-<!-- au début absence de fichiers minifiés bien que déclarés dans le head,  
-		en minifiant et faisant correspondre les noms des fichiers avec les déclarations, 
-		cela a résolu nombre de problèmes identifiés auparavant -->
+	<!-- chargement asynchrone des feuilles css, en passant par l’attribut media="print" -->
 
-		<!-- <link rel="preload" href="./css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
-		<link rel="preload" href="./css/font-awesome.min.css"  as="style" onload="this.rel='stylesheet'">
-		<link rel="preload" href="./css/et-line.min.css" as="style" onload="this.rel='stylesheet'">
-		<link rel="preload" href="style.min.css" as="style" onload="this.rel='stylesheet'"> -->
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
-	<link rel="stylesheet" type="text/css" href="style.min.css">
+	<link rel="preload" href="./css/bootstrap.min.css" as="style">
+	<link rel="stylesheet" href="./css/bootstrap.min.css" media="print"
+		onload="this.onload=null;this.media='all'">
+	<!-- <noscript>
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+	</noscript> -->
+
+	<link rel="preload" href="./css/font-awesome.min.css" as="style">
+	<link rel="stylesheet" href="./css/font-awesome.min.css" media="print"
+		onload="this.onload=null;this.media='all'">
+	<!-- <noscript>
+		<link rel="stylesheet" href="./css/font-awesome.min.css">
+	</noscript> -->
+
+	<link rel="preload" href="./css/et-line.min.css" as="style">
+	<link rel="stylesheet" href="./css/et-line.min.css" media="print"
+		onload="this.onload=null;this.media='all'">
+	<!-- <noscript>
+		<link rel="stylesheet" href="./css/et-line.min.css">
+	</noscript> -->
+
+	<link rel="preload" href="style.min.css" as="style">
+	<link rel="stylesheet" href="style.min.css" media="print"
+		onload="this.onload=null;this.media='all'">
+	<!-- <noscript>
+		<link rel="stylesheet" href="style.min.css">
+	</noscript> -->
 
 	<title>Formulaire de contact - Agence La Panthère</title>
-
 
 	<!-- Analytics -->
 
 	<!-- Analytics END -->
-
 </head>
 
 <body>
@@ -75,96 +91,99 @@
 				</nav>
 			</div>
 		</header>
-		<!-- bloc-0 END -->
-
-		<!-- bloc-6  SECTION INTRODUCTION-->
-		<section
-			class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper"
-			id="bloc-6">
-			<div class="container bloc-lg">
-				<div class="row">
-					<div class="col-sm-12 text-center">
-						<h1 class="text-center hero-bloc-text tc-white ">
-							Parlons web design !
-						</h1>
-						<!-- Suppression de la classe : tc-white (du h1 ci-dessus et du p ci-dessous) qui donnait au texte  la même couleur que le fond
-				Remplacement par "tc-black" (créée dans le CSS) et ajout de bgc-white (classe bootstrap)  pour un meilleur contraste.   -->
-						<p
-							class="text-center mg-lg tight-width-whitespace tc-white">
-							Nous sommes ravis que vous souhaitiez collaborer
-							avec notre agence.<br>
-							Parlez-nous de votre projet en complétant le
-							formulaire ci-dessous.
-						</p>
+		<!-- bloc-0 HEADER  END -->
+		<!-- bloc-MAIN -->
+		<main>
+			<!-- bloc-6  SECTION INTRODUCTION-->
+			<section
+				class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper"
+				id="bloc-6">
+				<div class="container bloc-lg">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h1 class="text-center hero-bloc-text tc-white ">
+								Parlons web design !
+							</h1>
+							<!-- modification  de la classe  tc-white (du h1 ci-dessus et du p ci-dessous) 
+								qui donnait au texte  la même couleur que le fond, 
+								pour qu'elle soit vraiment blanche comme son nom l'indique.   -->
+							<p
+								class="text-center mg-lg tight-width-whitespace tc-white">
+								Nous sommes ravis que vous souhaitiez collaborer
+								avec notre agence.<br>
+								Parlez-nous de votre projet en complétant le
+								formulaire ci-dessous.
+							</p>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<!-- bloc-6 SECTION INTRODUCTION  END -->
+			</section>
+			<!-- bloc-6 SECTION INTRODUCTION  END -->
 
-		<!-- bloc-7 SECTION FORMULAIRE  -->
-		<section class="bloc bgc-white l-bloc" id="bloc-7">
-			<div class="container bloc-lg">
-				<div class="row">
-					<div class="col-sm-6">
-						<form id="form_1" novalidate
-							success-msg="Your message has been sent."
-							fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
-							<div class="form-group">
-								<label class="form-label">
-									Nom
-								</label>
-								<input type="text" id="name"
-									class="form-control" required />
-							</div>
-							<div class="form-group">
-								<label>
-									Adresse email
-								</label>
-								<input id="email" class="form-control"
-									type="email" required />
-							</div>
-							<div class="form-group">
-								<label>
-									Comment nous avez-vous connus ?
-								</label>
-								<input class="form-control" type="email"
-									required id="input_504" />
-							</div>
-							<div class="form-group">
-								<label>
-									Brief de votre projet (ajoutez autant de
-									détails que nécessaire)<br>
-								</label><textarea id="message"
-									class="form-control" rows="4" cols="50"
-									required></textarea>
-							</div>
-							<button
-								class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
-								type="submit">
-								Envoyer
-							</button>
-						</form>
-					</div>
-					<div class="col-sm-6">
-						<p>
-							contact@agencelapanthere.com<br>2 place Sathonay
-							69001 Lyon<br>Ouvert de 9h à 18h, du lundi au
-							vendredi<br>
-						</p>
+			<!-- bloc-7 SECTION FORMULAIRE  -->
+			<section class="bloc bgc-white l-bloc" id="bloc-7">
+				<div class="container bloc-lg">
+					<div class="row">
+						<div class="col-sm-6">
+							<form id="form_1" novalidate
+								success-msg="Votre message a bien été envoyé."
+								fail-msg="Il semblerait que votre serveur mail ne réponde pas. Nous sommes désolés pour le désagrément !">
+								<div class="form-group">
+									<label class="form-label">
+										Nom
+									</label>
+									<input type="text" id="name"
+										class="form-control" required />
+								</div>
+								<div class="form-group">
+									<label>
+										Adresse email
+									</label>
+									<input id="email" class="form-control"
+										type="email" required />
+								</div>
+								<div class="form-group">
+									<label>
+										Comment nous avez-vous connus ?
+									</label>
+									<input class="form-control" type="email"
+										required id="input_504" />
+								</div>
+								<div class="form-group">
+									<label>
+										Brief de votre projet (ajoutez autant de
+										détails que nécessaire)<br>
+									</label><textarea id="message"
+										class="form-control" rows="4" cols="50"
+										required></textarea>
+								</div>
+								<button
+									class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
+									type="submit">
+									Envoyer
+								</button>
+							</form>
+						</div>
+						<div class="col-sm-6">
+							<p>
+								contact@agencelapanthere.com<br>2 place Sathonay
+								69001 Lyon<br>Ouvert de 9h à 18h, du lundi au
+								vendredi<br>
+							</p>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<!-- bloc-7  SECTION FORMULAIRE   END -->
+			</section>
+			<!-- bloc-7  SECTION FORMULAIRE   END -->
 
-		<!-- ScrollToTop Button -->
-		<a class="bloc-button btn btn-d scrollToTop"
-			onclick="scrollToTarget('1')"><span
-				class="fa fa-chevron-up"></span></a>
-		<!-- ScrollToTop Button END-->
+			<!-- ScrollToTop Button -->
+			<a class="bloc-button btn btn-d scrollToTop"
+				onclick="scrollToTarget('1')"><span
+					class="fa fa-chevron-up"></span></a>
+			<!-- ScrollToTop Button END-->
 
-
+		</main>
+		<!-- bloc-  MAIN  END -->
 		<!-- Footer  FOOTER - bloc-8 -->
 		<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 			<div class="container bloc-sm">
