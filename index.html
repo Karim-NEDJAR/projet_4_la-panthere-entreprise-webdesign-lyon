@@ -21,7 +21,12 @@
 		<link rel="canonical" href="https://www.agencelapanthere.com " />   	 -->
 
 	
-
+<!-- préchargement des polices en  haute priorité  -->
+<link rel="preload" fetchpriority="high"
+href="./fonts/fontawesome-webfont.woff2" as="font" type="font/woff2"
+crossorigin>
+<link rel="preload" fetchpriority="high" href="./fonts/et-line.woff"
+as="font" type="font/woff2" crossorigin>
 
 	<!-- les scripts:  dans le fichier CSS original il n'y avait que touchSwipe.js qui était en defer  -->
 	<script src="./js/jquery-2.1.0.min.js" defer></script>
@@ -31,12 +36,7 @@
 	<script src="./js/gmaps.min.js" defer></script>
 
 
-	<!-- préchargement des polices en  haute priorité  -->
-    <link rel="preload" fetchpriority="high"
-        href="./fonts/fontawesome-webfont.woff2" as="font" type="font/woff2"
-        crossorigin>
-    <link rel="preload" fetchpriority="high" href="./fonts/et-line.woff"
-        as="font" type="font/woff2" crossorigin>
+	
 
 	<!-- les  fichiers css ont été minifiés (présence de .min). Idem pour les .JS   -->
 	<!-- chargement asynchrone des feuilles css, en passant par l’attribut media="print" -->

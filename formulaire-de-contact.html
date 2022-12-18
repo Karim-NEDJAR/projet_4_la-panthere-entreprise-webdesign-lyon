@@ -9,8 +9,16 @@
 		content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 	<!-- remplacement de favicon.jpg en favicon.ico, de  image/png en   image/x-icon, 
-		et suppression de shortcut parmi les valeurs de rel -->
+		et suppression de shortcut  parmi les valeurs de rel -->
 
+		<!-- préchargement des polices en  haute priorité  -->
+		<link rel="preload" fetchpriority="high"
+        href="./fonts/fontawesome-webfont.woff2" as="font" type="font/woff2"
+        crossorigin>
+    <link rel="preload" fetchpriority="high" href="./fonts/et-line.woff"
+        as="font" type="font/woff2" crossorigin>
+
+		
 	<!-- les  fichiers css et js ont été minifiés (présence de .min).    -->
 	<script src="./js/jquery-2.1.0.min.js" defer></script>
 	<script src="./js/bootstrap.min.js" defer></script>
@@ -18,13 +26,7 @@
 	<script src="./js/jqBootstrapValidation.min.js" defer></script>
 	<script src="./js/formHandler.min.js" defer></script>
 
-	<!-- préchargement des polices en  haute priorité  -->
-    <link rel="preload" fetchpriority="high"
-        href="./fonts/fontawesome-webfont.woff2" as="font" type="font/woff2"
-        crossorigin>
-    <link rel="preload" fetchpriority="high" href="./fonts/et-line.woff"
-        as="font" type="font/woff2" crossorigin>
-
+	
 	<!-- chargement asynchrone des feuilles css, en passant par l’attribut media="print" -->
 
 	<link rel="preload" href="./css/bootstrap.min.css" as="style">
