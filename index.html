@@ -20,27 +20,25 @@
 		En supposant que ce soit la première, on devrait  insérer ici la balise canonique ainsi:
 		<link rel="canonical" href="https://www.agencelapanthere.com " />   	 -->
 
-<!-- préchargement haute priorité  -->
-	<!-- <link rel="preload" fetchpriority="high" as="image" href="img/fluo-rose-mob.webp" type="image/webp">
-	<link rel="preload" fetchpriority="high" as="image" href="img/postit-vert-mob.webp" type="image/webp">
-	<link rel="preload" fetchpriority="high" as="image" href="img/lines-h2-bg.webp" type="image/webp">
-	<link rel="preload" fetchpriority="high" as="image" href="img/texture-paper.png" type="image/png">
-	<link rel="preload" fetchpriority="high" href="./fonts/fontawesome-webfont.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" fetchpriority="high" href="./fonts/et-line.woff" as="font" type="font/woff2" crossorigin>  -->
-	
-<!-- les scripts -->
-	<script  src="./js/jquery-2.1.0.min.js" async></script>
-		<script  src="./js/bootstrap.min.js" async></script>
-		<script  src="./js/blocs.min.js" async></script>
-		<script  src="./js/jquery.touchSwipe.min.js" defer></script>
-		<script  src="./js/gmaps.min.js" async></script>
-		<!--  dans le fichier original il n'y avait que touchSwipe.js qui était en defer  -->
-<!-- ces  fichiers css ont été minifiés (présence de l'infixe .min). Idem pour les .JS   --> 
-<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">	
-<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	<!-- préchargement haute priorité  -->
+
+	<link rel="preload" fetchpriority="high"
+		href="./fonts/fontawesome-webfont.woff2" as="font" type="font/woff2"
+		crossorigin>
+	<link rel="preload" fetchpriority="high" href="./fonts/et-line.woff"
+		as="font" type="font/woff2" crossorigin>
+
+	<!-- ces  fichiers css ont été minifiés (présence de l'infixe .min). Idem pour les .JS   -->
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
 	<link rel="stylesheet" type="text/css" href="style.min.css">
-
+	<!-- les scripts:  dans le fichier original il n'y avait que touchSwipe.js qui était en defer  -->
+	<script src="./js/jquery-2.1.0.min.js" defer></script>
+	<script src="./js/bootstrap.min.js" defer></script>
+	<script src="./js/blocs.min.js" defer></script>
+	<script src="./js/jquery.touchSwipe.min.js" defer></script>
+	<script src="./js/gmaps.min.js" defer></script>
 	
 
 	<title>Agence La Panthère - Entreprise webdesign Lyon</title>
