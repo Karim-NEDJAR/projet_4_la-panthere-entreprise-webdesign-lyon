@@ -24,7 +24,10 @@
 	<link rel="preload" href="./fonts/fontawesome-webfont.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="./fonts/et-line.woff" as="font" type="font/woff2" crossorigin>
 <!-- ces  fichiers css ont été minifiés (présence de l'infixe .min). Idem pour les .JS   --> 
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+
+<link rel="preload" href="./css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="./css/bootstrap.min.css"></noscript>
+	<!-- <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
 	<link rel="stylesheet" type="text/css" href="style.min.css">
