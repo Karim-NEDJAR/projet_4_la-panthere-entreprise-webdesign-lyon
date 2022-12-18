@@ -20,22 +20,24 @@
 		En supposant que ce soit la première, on devrait  insérer ici la balise canonique ainsi:
 		<link rel="canonical" href="https://www.agencelapanthere.com " />   	 -->
 
-		<script defer src="./js/jquery-2.1.0.min.js"></script>
-		<script defer src="./js/bootstrap.min.js"></script>
-		<script defer src="./js/blocs.min.js"></script>
-		<script defer src="./js/jquery.touchSwipe.min.js"></script>
-		<script defer src="./js/gmaps.min.js"></script>
-		<!--  ## il n'y avait que touchSwipe.js qui était en defer 
-			mais là j'ai tout mis  en DEFER pour qu'ils s'executent tous dans cet ordre précis 
-			et à la fin de la construction du DOM et du CSSOM (i.e.  sans provoquer de blocage du chargement) -->
+		
 <!-- préchargement d'une image et de deux fonts -->
 	<link rel="preload" fetchpriority="high" as="image" href="img/fluo-rose-mob.webp" type="image/webp">
 	<link rel="preload" href="./fonts/fontawesome-webfont.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="./fonts/et-line.woff" as="font" type="font/woff2" crossorigin>
+<!-- les scripts -->
+	<script  src="./js/jquery-2.1.0.min.js"></script>
+		<script  src="./js/bootstrap.min.js"></script>
+		<script  src="./js/blocs.min.js"></script>
+		<script defer src="./js/jquery.touchSwipe.min.js"></script>
+		<script  src="./js/gmaps.min.js"></script>
+		<!--  ## il n'y avait que touchSwipe.js qui était en defer 
+			mais là j'ai tout mis  en DEFER pour qu'ils s'executent tous dans cet ordre précis 
+			et à la fin de la construction du DOM et du CSSOM (i.e.  sans provoquer de blocage du chargement) -->
 <!-- ces  fichiers css ont été minifiés (présence de l'infixe .min). Idem pour les .JS   --> 
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
 	<link rel="stylesheet" type="text/css" href="style.min.css">
 
 	
