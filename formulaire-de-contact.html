@@ -18,7 +18,7 @@
     <link rel="preload" fetchpriority="high" href="./fonts/et-line.woff"
         as="font" type="font/woff2" crossorigin>
 
-		
+
 	<!-- les  fichiers css et js ont été minifiés (présence de .min).    -->
 	<script src="./js/jquery-2.1.0.min.js" defer></script>
 	<script src="./js/bootstrap.min.js" defer></script>
@@ -110,18 +110,23 @@
 				<div class="container bloc-lg">
 					<div class="row">
 						<div class="col-sm-12 text-center">
-							<h1 class="text-center hero-bloc-text tc-white ">
-								Parlons web design !
+							<!-- remplacement en h1 de tc-white en tc-black
+							pour plus de contraste avec le fond orange -->
+							<h1 class="text-center hero-bloc-text tc-black ">
+								Parlons web design&nbsp;!
 							</h1>
-							<!-- modification  de la classe  tc-white (du h1 ci-dessus et du p ci-dessous) 
+							<!-- modification  de la classe  tc-white (du p ci-dessous) 
 								qui donnait au texte  la même couleur que le fond, 
-								pour qu'elle soit vraiment blanche comme son nom l'indique.   -->
+								pour qu'elle soit vraiment blanche comme son nom l'indique.
+							Mais nécessité, pour un contraste suffisant, d'ajouter un fond plus sombre (#983C11 = classe orangemarron)
+						en assombrissant la couleur actuelle du fond  (#f3976c) pour rester dans les tons du site   -->
 							<p
-								class="text-center mg-lg tight-width-whitespace tc-white">
+								class="text-justify mg-lg tight-width-whitespace tc-white orangemarron">
+								<br>
 								Nous sommes ravis que vous souhaitiez collaborer
-								avec notre agence.<br>
-								Parlez-nous de votre projet en complétant le
-								formulaire ci-dessous.
+								avec notre agence. Parlez-nous de votre projet en complétant le
+								formulaire ci-dessous. 
+								<br>  <br> 
 							</p>
 						</div>
 					</div>
@@ -145,21 +150,21 @@
 										class="form-control" required />
 								</div>
 								<div class="form-group">
-									<label>
+									<label class="form-label">
 										Adresse email
 									</label>
 									<input id="email" class="form-control"
 										type="email" required />
 								</div>
 								<div class="form-group">
-									<label>
+									<label class="form-label">
 										Comment nous avez-vous connus ?
 									</label>
 									<input class="form-control" type="email"
 										required id="input_504" />
 								</div>
 								<div class="form-group">
-									<label>
+									<label class="form-label">
 										Brief de votre projet (ajoutez autant de
 										détails que nécessaire)<br>
 									</label><textarea id="message"
@@ -174,11 +179,13 @@
 							</form>
 						</div>
 						<div class="col-sm-6">
-							<p>
+							<address class="address">
+								<p>
 								contact@agencelapanthere.com<br>2 place Sathonay
 								69001 Lyon<br>Ouvert de 9h à 18h, du lundi au
 								vendredi<br>
 							</p>
+							</address>
 						</div>
 					</div>
 				</div>
@@ -198,7 +205,7 @@
 			<div class="container bloc-sm">
 				<div class="row">
 					<div class="col-sm-12">
-						<p class="text-center white">
+						<p class="text-center tc-black">
 							Agence La Panthère - Agence web basée à Lyon.<br>
 						</p>
 						<div class="row row-no-gutters social">
@@ -206,7 +213,7 @@
 								<div class="text-center">
 									<a class="social" href="index.html"><span
 											class="fa fa-twitter icon-md tc-white"></span>
-										<p class="tc-white">Twitter</p>
+										<p class="tc-black">Twitter</p>
 									</a>
 								</div>
 							</div>
@@ -214,7 +221,7 @@
 								<div class="text-center">
 									<a class="social" href="index.html"><span
 											class="fa fa-facebook icon-md tc-white"></span>
-										<p class="tc-white">Facebook</p>
+										<p class="tc-black">Facebook</p>
 									</a>
 								</div>
 							</div>
@@ -222,7 +229,7 @@
 								<div class="text-center">
 									<a class="social" href="index.html"><span
 											class="fa fa-dribbble icon-md tc-white"></span>
-										<p class="tc-white">Dribbble</p>
+										<p class="tc-black">Dribbble</p>
 									</a>
 								</div>
 							</div>
@@ -231,7 +238,7 @@
 									<a class="social" href="index.html">
 										<span
 											class="fa fa-instagram icon-md tc-white"></span>
-										<p class="tc-white">Instagram</p>
+										<p class="tc-black">Instagram</p>
 									</a>
 								</div>
 							</div>

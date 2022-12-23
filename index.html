@@ -20,13 +20,7 @@
 		En supposant que ce soit la première, on devrait  insérer ici la balise canonique ainsi:
 		<link rel="canonical" href="https://www.agencelapanthere.com " />   	 -->
 
-	
-<!-- préchargement des polices en  haute priorité  -->
-<link rel="preload" fetchpriority="high"
-href="./fonts/fontawesome-webfont.woff2" as="font" type="font/woff2"
-crossorigin>
-<link rel="preload" fetchpriority="high" href="./fonts/et-line.woff"
-as="font" type="font/woff2" crossorigin>
+
 
 	<!-- les scripts:  dans le fichier CSS original il n'y avait que touchSwipe.js qui était en defer  -->
 	<script src="./js/jquery-2.1.0.min.js" defer></script>
@@ -36,7 +30,14 @@ as="font" type="font/woff2" crossorigin>
 	<script src="./js/gmaps.min.js" defer></script>
 
 
-	
+
+	<!-- préchargement des polices   -->
+	<link rel="preload" fetchpriority="high"
+		href="./fonts/fontawesome-webfont.woff2" as="font" type="font/woff2"
+		crossorigin>
+	<link rel="preload" fetchpriority="high" href="./fonts/et-line.woff"
+		as="font" type="font/woff2" crossorigin>
+
 
 	<!-- les  fichiers css ont été minifiés (présence de .min). Idem pour les .JS   -->
 	<!-- chargement asynchrone des feuilles css, en passant par l’attribut media="print" -->
@@ -72,6 +73,7 @@ as="font" type="font/woff2" crossorigin>
 	<!-- technique à privilégier pour ne pas bloquer le rendu: 
 	ne garder que les parties réellement utilisées dans les css 
 remove the unused css ! mais ai-je le droit de le faire sur bootstrap.css ?? -->
+
 
 	<title>Agence La Panthère - Entreprise webdesign Lyon</title>
 
@@ -170,10 +172,10 @@ remove the unused css ! mais ai-je le droit de le faire sur bootstrap.css ?? -->
 								<span
 									class="et-icon-browser sm-shadow icon-dark-slate-blue icons icon-lg"></span>
 							</div>
-							<h3 class="mg-md text-center">
+							<h3 class="mg-md text-center l-spacing">
 								Web design
 							</h3>
-							<p class="text-center ">
+							<p class="text-justify ">
 								Que vous ayez un site web qui a besoin
 								d&rsquo;un rafraîchissement ou que vous partiez
 								de
@@ -186,10 +188,10 @@ remove the unused css ! mais ai-je le droit de le faire sur bootstrap.css ?? -->
 								<span
 									class="et-icon-presentation sm-shadow icon-dark-slate-blue icons icon-lg"></span>
 							</div>
-							<h3 class="mg-md text-center">
-								&nbsp;Stratégie
+							<h3 class="mg-md text-center l-spacing">
+								Stratégie
 							</h3>
-							<p class="text-center ">
+							<p class="text-justify ">
 								Plutôt que de suggérer des designs à la mode,
 								nous travaillerons avec vous pour comprendre
 								vos objectifs commerciaux afin de vous proposer
@@ -201,10 +203,10 @@ remove the unused css ! mais ai-je le droit de le faire sur bootstrap.css ?? -->
 								<span
 									class="et-icon-edit sm-shadow icon-dark-slate-blue icons icon-lg"></span>
 							</div>
-							<h3 class="mg-md text-center">
+							<h3 class="mg-md text-center l-spacing">
 								Illustrations
 							</h3>
-							<p class="text-center ">
+							<p class="text-justify">
 								Un bon design n'est rien sans de bonnes
 								illustrations. Laissez faire notre équipe de
 								graphistes talentueux pour donner à vos pages
@@ -216,11 +218,12 @@ remove the unused css ! mais ai-je le droit de le faire sur bootstrap.css ?? -->
 						<div class="col-xs-12 col-md-8 col-md-offset-2 ">
 							<!-- <img alt="agence web, agence web paris, web design paris, stratégie web" src="img/citation.png" /> -->
 							<blockquote class="blockquote">
-								<p>L'agence La Panthère est une excellente
-									agence web ! Les web designers ont réussi à
+								<p> L'agence La Panthère est une excellente
+									agence web&nbsp;! Les web designers ont
+									réussi à
 									capturer l'essence de notre entreprise et à
 									l'intégrer à notre site. Cela nous a aidé à
-									doubler nos ventes en ligne à Lyon. <br>
+									doubler nos ventes en ligne à Lyon. <br> <br>
 									<cite>Maxime Guibard, PDG de <i>À vos
 											fourchettes</i> </cite>
 								</p>
@@ -246,7 +249,7 @@ remove the unused css ! mais ai-je le droit de le faire sur bootstrap.css ?? -->
 								clients
 								.<br>
 							</h2>
-							<p class="text-center white">
+							<p class="text-center tc-white">
 								Nous aimons collaborer avec des entrepreneurs
 								créatifs et des entreprises locales, qu’elles
 								aient besoin de créer un site de A à Z ou de
@@ -308,10 +311,10 @@ remove the unused css ! mais ai-je le droit de le faire sur bootstrap.css ?? -->
 								</picture>
 
 							</a>
-							<h3 class="mg-md text-center">
+							<h3 class="mg-md text-center l-spacing line-h">
 								Refonte d'un site web pour un journal local
 							</h3>
-							<p class="text-center">
+							<p class="text-center bgc-white ">
 								Nous avons créé une nouvelle identité visuelle
 								pour un journal lyonnais.
 							</p>
@@ -344,10 +347,10 @@ remove the unused css ! mais ai-je le droit de le faire sur bootstrap.css ?? -->
 										alt="Une jeune photographe regarde à travers son appareil photo professionnel posé sur un trépied et muni d'un téléobjectif." />
 								</picture>
 							</a>
-							<h3 class="mg-md text-center">
+							<h3 class="mg-md text-center l-spacing line-h">
 								Création d'un site web pour photographes
 							</h3>
-							<p class="text-center">
+							<p class="text-center bgc-white ">
 								Nous avons conçu la plateforme idéale pour
 								laisser place aux clichés des photographes.
 							</p>
@@ -368,10 +371,10 @@ remove the unused css ! mais ai-je le droit de le faire sur bootstrap.css ?? -->
 										alt="Matériel de capture de son et d'image:  micro, téléobjectifs, dictaphone, caméras, PC portable, etcetera." />
 								</picture>
 							</a>
-							<h3 class="mg-md text-center">
+							<h3 class="mg-md text-center l-spacing line-h">
 								Création d'un site internet pour un voyageur
 							</h3>
-							<p class="text-center">
+							<p class="text-center bgc-white ">
 								Nous avons élaboré un site internet et des
 								illustrations pour sublimer les vidéos et les
 								articles de ce voyageur.
@@ -391,10 +394,10 @@ remove the unused css ! mais ai-je le droit de le faire sur bootstrap.css ?? -->
 										alt="Ambiance de travail. Préparation des décorations et cartons d'invitation pour mariage, rubans roses, paquet cadeau, ciseaux, enveloppes. Mains d'une femme sur le clavier du pc portable." />
 								</picture>
 							</a>
-							<h3 class="mg-md text-center">
+							<h3 class="mg-md text-center l-spacing line-h">
 								Conception d'un site pour une agence de mariage
 							</h3>
-							<p class="text-center">
+							<p class="text-center bgc-white ">
 								Nous avons travaillé avec cette agence pour
 								créer un site internet permettant la
 								présentation détaillée de leurs prestations.
@@ -414,7 +417,7 @@ remove the unused css ! mais ai-je le droit de le faire sur bootstrap.css ?? -->
 
 					<div class="row">
 
-						<h2 class="mg-md text-center tc-white">
+						<h2 class="mg-md text-center tc-white orangemarron">
 							Prêt pour redonner vie à votre projet ?<br>Contactez
 							notre équipe !
 						</h2>
@@ -433,7 +436,7 @@ remove the unused css ! mais ai-je le droit de le faire sur bootstrap.css ?? -->
 			<div class="container bloc-sm">
 				<div class="row">
 					<div class="col-sm-12">
-						<p class="text-center white">
+						<p class="text-center tc-black">
 							Agence La Panthère - Agence web basée à Lyon.<br>
 						</p>
 						<div class="row row-no-gutters social">
