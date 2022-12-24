@@ -18,17 +18,6 @@ a:hover {
     cursor: pointer;
 }
 
-/*
-#page-loading-blocs-notifaction {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
-}
-*/
-/*Ci-dessus, ID inexistant dans l'HTML et image inexistante dans le dossier IMG*/
 
 .bloc {
     width: 100%;
@@ -783,9 +772,11 @@ h4 {
 .avatar {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
-
+/* modification de la couleur de l'arrière plan 
+pour obtenir un contraste suffisant */
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    /* background-color: rgba(165, 147, 99, 0.7); */
+    background-color: rgb(134, 116, 68);
     padding: 40px 40px 40px 40px;
 }
 
@@ -832,7 +823,17 @@ h4 {
 }
 
 .blockquote p {
-    border: 1px solid #333 ;
+    padding: 15px;
+    background: rgba(0,0,0,.05);
+    color: #333 !important;
+    font-style: italic;
+}
+.blockquote p cite  {
+     font-style: normal;
+}
+.blockquote p cite span {
+    font-style:italic;
+    color: #111 !important;
 }
 /** taille texte du label version mobile*/
 .form-label{

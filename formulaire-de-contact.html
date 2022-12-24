@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="description"
-		content="Pour une collaboration efficace avec l'entreprise de webdesign La Panthère, joignez dès maintenant notre équipe de designers pour leur expliquer votre projet et leur préciser vos attentes. Il suffit juste de renseigner le formulaire de contact sur cette page.">
+		content="Pour une collaboration efficace avec l'entreprise de web design La Panthère, joignez dès maintenant notre équipe de designers pour leur expliquer votre projet et leur préciser vos attentes. Il suffit juste de renseigner le formulaire de contact sur cette page.">
 	<meta name="viewport"
 		content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -143,25 +143,25 @@
 								success-msg="Votre message a bien été envoyé."
 								fail-msg="Il semblerait que votre serveur mail ne réponde pas. Nous sommes désolés pour le désagrément !">
 								<div class="form-group">
-									<label class="form-label">
+									<label for="name" class="form-label">
 										Nom
 									</label>
 									<input type="text" id="name"
-										class="form-control" required />
+										class="form-control" required  aria-required="true"/>
 								</div>
 								<div class="form-group">
-									<label class="form-label">
+									<label for="email" class="form-label">
 										Adresse email
 									</label>
 									<input id="email" class="form-control"
-										type="email" required />
+										type="email" required aria-required="true" />
 								</div>
 								<div class="form-group">
 									<label class="form-label">
 										Comment nous avez-vous connus ?
 									</label>
 									<input class="form-control" type="email"
-										required id="input_504" />
+										required id="input_504"  aria-required="true"/>
 								</div>
 								<div class="form-group">
 									<label class="form-label">
@@ -169,7 +169,7 @@
 										détails que nécessaire)<br>
 									</label><textarea id="message"
 										class="form-control" rows="4" cols="50"
-										required></textarea>
+										required aria-required="true"></textarea>
 								</div>
 								<button
 									class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
@@ -206,7 +206,8 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<p class="text-center tc-black">
-							Agence La Panthère - Agence web basée à Lyon.<br>
+							Agence La Panthère <br>
+							 Entreprise de web design basée à Lyon.<br> <br>
 						</p>
 						<div class="row row-no-gutters social">
 							<div class="col-xs-3 col-md-6">
