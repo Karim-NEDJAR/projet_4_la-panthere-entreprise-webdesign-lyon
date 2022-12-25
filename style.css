@@ -13,11 +13,59 @@ button {
     outline: none !important;
 }
 
-a:hover {
-    text-decoration: none;
+/* ajout d'une réaction aux états  focus et  active dans la navbar (header)*/
+.navbar a:focus,
+.navbar a:active {
+    border: 2px red solid !important;
+    cursor: pointer;
+    text-decoration: underline !important;
+    text-decoration-color: red !important;
+}
+
+/* ajout d'une visualisation du  hover  (header)*/
+
+.navbar a:hover {
+    border: 2px blue solid !important;
+    cursor: pointer;
+    text-decoration: underline !important;
+    text-decoration-color: blue !important;
+}
+
+/* ajout d'une visualisation des  états  focus,  hover et  active 
+pour les textes des liens dans le footer 
+et pour l'ancre "contactez notre équipe" dans l'index*/
+a:focus>span+p,
+a:active>span+p,
+.contactez:focus,
+.contactez:active {
+    border: 2px red solid !important;
+    cursor: pointer;
+    text-decoration: underline !important;
+    text-decoration-color: red !important;
+}
+
+/* ajout d'une visualisation du  hover  du footer 
+et de l'ancre "contactez notre équipe" dans l'index */
+a:hover>span+p,
+.contactez:hover {
+    border: 2px blue solid !important;
+    cursor: pointer;
+    text-decoration: underline !important;
+    text-decoration-color: blue !important;
+}
+
+/* ajout d'une visualisation du  hover   dans le lien du portefolio, index.html */
+.col-sm-6>a:hover {
+    border: 2px blue solid !important;
     cursor: pointer;
 }
 
+/* ajout d'une visualisation du  focus et active   dans le lien du portefolio, index.html */
+.col-sm-6>a:focus,
+.col-sm-6>a:active {
+    border: 2px red solid !important;
+    cursor: pointer;
+}
 
 .bloc {
     width: 100%;
@@ -466,6 +514,21 @@ button {
     outline: none !important;
 }
 
+/* ajout d'une visualisation des états du  button  focus et active  */
+button:focus,
+button:active {
+    outline: 2px solid red !important;
+    text-decoration: underline !important;
+    text-decoration-color: red !important;
+}
+
+/* ajout d'une visualisation de l'état  du  button  hover  */
+button:hover {
+    outline: 2px solid blue !important;
+    text-decoration: underline !important;
+    text-decoration-color: blue !important;
+}
+
 .btn-rd {
     border-radius: 40px;
 }
@@ -512,7 +575,34 @@ button {
     box-shadow: none;
 }
 
-.scrollToTop {
+/* effet hover sur les éléments de la classe form-control quand ceux-ci sont survolés */
+.form-control:hover {
+    border-color: rgba(0, 0, 0, .2);
+    box-shadow: inset 0 1px 1px rgba(85, 51, 11, 0.075), 0 0 8px rgba(233, 187, 102, 0.6);
+    background-color: #efe;
+}
+
+/* effet hover sur l'INPUT et le TEXTAREA déclenché par le survol de  l'étiquette */
+.form-label:hover+input,
+.form-label:hover+textarea {
+    border-color: rgba(0, 0, 0, .2);
+    box-shadow: inset 0 1px 1px rgba(85, 51, 11, 0.075), 0 0 8px rgba(233, 187, 102, 0.6);
+    background-color: #efe;
+}
+
+/* effet hover sur l'étiquette quand celle-ci  est survolée */
+.form-label:hover {
+    color: black !important;
+}
+
+/* ciblage du label quand l'input est survolé */
+/* .form-group:hover .form-group:first-child,
+.form-group:hover .form-group:last-child {
+    color: red !important;
+    /* font-weight: bold; */
+}
+
+*/ .scrollToTop {
     width: 40px;
     height: 40px;
     position: fixed;
@@ -772,6 +862,7 @@ h4 {
 .avatar {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
+
 /* modification de la couleur de l'arrière plan 
 pour obtenir un contraste suffisant */
 .black-background {
@@ -807,6 +898,7 @@ pour obtenir un contraste suffisant */
     letter-spacing: 2px;
 
 }
+
 /*augmentation de la hauteur de ligne pour certains titres */
 .line-h {
     line-height: 1.6;
@@ -818,36 +910,41 @@ pour obtenir un contraste suffisant */
 
 .orangemarron {
     /* background-color: #983C11; */
-    background-color:  #A76648;
+    background-color: #A76648;
     padding: 0 10px;
 }
 
 .blockquote p {
     padding: 15px;
-    background: rgba(0,0,0,.05);
+    background: rgba(0, 0, 0, .05);
     color: #333 !important;
     font-style: italic;
 }
-.blockquote p cite  {
-     font-style: normal;
+
+.blockquote p cite {
+    font-style: normal;
 }
+
 .blockquote p cite span {
-    font-style:italic;
+    font-style: italic;
     color: #111 !important;
 }
+
 /** taille texte du label version mobile*/
-.form-label{
+.form-label {
     font-size: 16px;
 }
+
 /** taille texte du label version tablette */
 @media (max-width: 991px) and (min-width: 768px) {
-    .form-label{
+    .form-label {
         font-size: 17px;
     }
 }
+
 /** taille texte du label version ordinateur */
 @media (min-width: 992px) {
-    .form-label{
+    .form-label {
         font-size: 19px;
     }
 }
@@ -860,14 +957,15 @@ pour obtenir un contraste suffisant */
 de #FFFFFF elle passe à  #333*/
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #333 !important ;
-    }
+    color: #333 !important;
+}
+
 /** modification de la couleur 
 de #FFFFFF elle passe à  #000000*/
 .btn-atomic-tangerine:hover {
     background: #c27956 !important;
     color: black !important;
-    }
+}
 
 .ltc-white {
     color: #FFFFFF !important;

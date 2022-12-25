@@ -6,18 +6,22 @@
 	<meta name="description"
 		content="Pour une collaboration efficace avec l'entreprise de web design La Panthère, joignez dès maintenant notre équipe de designers pour leur expliquer votre projet et leur préciser vos attentes. Il suffit juste de renseigner le formulaire de contact sur cette page.">
 	<meta name="viewport"
-		content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+		content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 	<!-- remplacement de favicon.jpg en favicon.ico, de  image/png en   image/x-icon, 
 		et suppression de shortcut  parmi les valeurs de rel -->
 
-		<!-- préchargement des polices en  haute priorité  -->
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/font-awesome.min.css">
+		<link rel="stylesheet" href="./css/et-line.min.css">
+		<link rel="stylesheet" href="style.min.css">
+
+		<!-- préchargement des polices   -->
 		<link rel="preload" fetchpriority="high"
         href="./fonts/fontawesome-webfont.woff2" as="font" type="font/woff2"
         crossorigin>
     <link rel="preload" fetchpriority="high" href="./fonts/et-line.woff"
         as="font" type="font/woff2" crossorigin>
-
 
 	<!-- les  fichiers css et js ont été minifiés (présence de .min).    -->
 	<script src="./js/jquery-2.1.0.min.js" defer></script>
@@ -26,36 +30,7 @@
 	<script src="./js/jqBootstrapValidation.min.js" defer></script>
 	<script src="./js/formHandler.min.js" defer></script>
 
-	
-	<!-- chargement asynchrone des feuilles css, en passant par l’attribut media="print" -->
 
-	<link rel="preload" href="./css/bootstrap.min.css" as="style">
-	<link rel="stylesheet" href="./css/bootstrap.min.css" media="print"
-		onload="this.onload=null;this.media='all'">
-	<!-- <noscript>
-		<link rel="stylesheet" href="./css/bootstrap.min.css">
-	</noscript> -->
-
-	<link rel="preload" href="./css/font-awesome.min.css" as="style">
-	<link rel="stylesheet" href="./css/font-awesome.min.css" media="print"
-		onload="this.onload=null;this.media='all'">
-	<!-- <noscript>
-		<link rel="stylesheet" href="./css/font-awesome.min.css">
-	</noscript> -->
-
-	<link rel="preload" href="./css/et-line.min.css" as="style">
-	<link rel="stylesheet" href="./css/et-line.min.css" media="print"
-		onload="this.onload=null;this.media='all'">
-	<!-- <noscript>
-		<link rel="stylesheet" href="./css/et-line.min.css">
-	</noscript> -->
-
-	<link rel="preload" href="style.min.css" as="style">
-	<link rel="stylesheet" href="style.min.css" media="print"
-		onload="this.onload=null;this.media='all'">
-	<!-- <noscript>
-		<link rel="stylesheet" href="style.min.css">
-	</noscript> -->
 
 	<title>Formulaire de contact - Agence La Panthère</title>
 
@@ -85,7 +60,7 @@
 							<span class="icon-bar"></span>
 						</button>
 					</div>
-					<div
+					<div role="navigation" tabindex="0" 
 						class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 						<ul class="site-navigation nav navbar-nav">
 							<li>
@@ -246,22 +221,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-6 ">
-						<p> <br>
-							<br>
-							Partenaires
-						</p>
-						<ul>
-							<li><a href="voiture.com">voiture.com</a></li>
-							<li><a href="pizza.com">pizza.com</a></li>
-							<li><a href="matoiture.com">matoiture.com</a></li>
-							<li><a
-									href="immobilierseo.com">immobilierseo.com</a>
-							</li>
-						</ul>
-					</div>
-				</div>
+				
 			</div>
 		</footer>
 		<!-- Footer - bloc-8 END -->
