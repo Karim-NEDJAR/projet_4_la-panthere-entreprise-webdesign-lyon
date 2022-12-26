@@ -18,7 +18,6 @@ button {
 .navbar a:active {
     border: 2px red solid !important;
     cursor: pointer;
-    text-decoration: underline !important;
     text-decoration-color: red !important;
 }
 
@@ -27,7 +26,6 @@ button {
 .navbar a:hover {
     border: 2px blue solid !important;
     cursor: pointer;
-    text-decoration: underline !important;
     text-decoration-color: blue !important;
 }
 
@@ -40,31 +38,35 @@ a:active>span+p,
 .contactez:active {
     border: 2px red solid !important;
     cursor: pointer;
-    text-decoration: underline !important;
     text-decoration-color: red !important;
 }
 
 /* ajout d'une visualisation du  hover  du footer 
-et de l'ancre "contactez notre équipe" dans l'index */
+et de l'ancre "contactez notre équipe" dans index.html */
 a:hover>span+p,
 .contactez:hover {
     border: 2px blue solid !important;
     cursor: pointer;
-    text-decoration: underline !important;
     text-decoration-color: blue !important;
 }
 
-/* ajout d'une visualisation du  hover   dans le lien du portefolio, index.html */
-.col-sm-6>a:hover {
+/*  visualisation du  hover   dans le lien du portefolio (index.html) est INUTILE, 
+il y a déjà un effet de voile gris */
+/* .col-sm-6>a:hover {
     border: 2px blue solid !important;
     cursor: pointer;
-}
+    text-decoration-color: blue !important;
+} */
 
 /* ajout d'une visualisation du  focus et active   dans le lien du portefolio, index.html */
-.col-sm-6>a:focus,
-.col-sm-6>a:active {
+.col-sm-6>a:focus img,
+.col-sm-6>a:active img {
     border: 2px red solid !important;
     cursor: pointer;
+}
+/* lien souligné même sans focus */
+.soulignement {
+    text-decoration: underline !important;
 }
 
 .bloc {
@@ -522,7 +524,7 @@ button:active {
     text-decoration-color: red !important;
 }
 
-/* ajout d'une visualisation de l'état  du  button  hover  */
+/* ajout d'une visualisation de l'état hover  du  button    */
 button:hover {
     outline: 2px solid blue !important;
     text-decoration: underline !important;
@@ -595,14 +597,7 @@ button:hover {
     color: black !important;
 }
 
-/* ciblage du label quand l'input est survolé */
-/* .form-group:hover .form-group:first-child,
-.form-group:hover .form-group:last-child {
-    color: red !important;
-    /* font-weight: bold; */
-}
-
-*/ .scrollToTop {
+ .scrollToTop {
     width: 40px;
     height: 40px;
     position: fixed;
@@ -906,6 +901,12 @@ pour obtenir un contraste suffisant */
 
 .tc-black {
     color: black !important;
+}
+/* saisie obligatoire */
+.asterisque {
+    font-size: 19px;
+    color: darkred;
+    vertical-align:middle;
 }
 
 .orangemarron {
