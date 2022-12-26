@@ -1000,32 +1000,32 @@ de #FFFFFF elle passe à  #000000*/
 /* les 2 images suivantes sont par défaut pour le mobile-first */
 
 .bg-banniere {
-    background-image: url("img/fluo-rose-mob.jpg");
+    background-image: url("img/fluo-rose-mob.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/postit-vert-mob.jpg");
+    background-image: url("img/postit-vert-mob.webp");
 }
 
 /* ici les 2 mêmes images optimisées pour les tablettes  */
 @media (max-width: 991px) and (min-width: 768px) {
     .bg-banniere {
-        background-image: url("img/fluo-rose-tab.jpg");
+        background-image: url("img/fluo-rose-tab.webp");
     }
 
     .bg-presentation {
-        background-image: url("img/postit-vert-tab.jpg");
+        background-image: url("img/postit-vert-tab.webp");
     }
 }
 
 /*   les 2 mêmes images optimisées pour les ordinateurs  */
 @media (min-width: 992px) {
     .bg-banniere {
-        background-image: url("img/fluo-rose-desk.jpg");
+        background-image: url("img/fluo-rose-desk.webp");
     }
 
     .bg-presentation {
-        background-image: url("img/postit-vert-desk.jpg");
+        background-image: url("img/postit-vert-desk.webp");
     }
 
 }
