@@ -36,10 +36,13 @@
 	<!-- technique à privilégier pour ne pas bloquer le rendu: 
 	ne garder que les parties réellement utilisées dans les css so:
 "Remove the unused css !"  mais ai-je le droit de le faire sur bootstrap.css ?? -->
-<link rel="preload" fetchpriority="high" as="image" href="img/fluo-rose-mob.webp" type="image/webp">
-    <link rel="preload" fetchpriority="high" as="image" href="img/postit-vert-mob.webp" type="image/webp">
-    <link rel="preload" fetchpriority="high" as="image" href="img/lines-h2-bg.webp" type="image/webp">
-    <link rel="preload" fetchpriority="high" as="image" href="img/texture-paper.png" type="image/png">
+	<!-- préchargement des polices   -->
+	<link rel="preload" fetchpriority="high"
+		href="./fonts/fontawesome-webfont.woff2" as="font" type="font/woff2"
+		crossorigin>
+	<link rel="preload" fetchpriority="high" href="./fonts/et-line.woff"
+		as="font" type="font/woff2" crossorigin>
+
 
 	<title>Agence La Panthère - Entreprise web design, Lyon</title>
 	<!-- Analytics -->
@@ -52,7 +55,7 @@
 	<!-- Principal conteneur -->
 	<div class="page-container">
 		<!-- bloc-0  ## == HEADER-->
-		<header class="bloc bgc-white l-bloc " id="bloc-0" >
+		<header class="bloc bgc-white l-bloc " id="bloc-0">
 			<div class="container bloc-sm">
 
 				<nav class="navbar row">
@@ -91,7 +94,7 @@
 		</header>
 		<!-- bloc-0 ## == HEADER   END -->
 		<!-- MAIN -->
-		<main >
+		<main>
 			<!-- bloc-1- SECTION presentation -->
 			<section
 				class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax"
@@ -375,7 +378,8 @@
 					<div class="row">
 
 						<h2 class="mg-md text-center tc-white orangemarron">
-							Prêts pour redonner un nouveau souffle à votre projet&nbsp;?<br>
+							Prêts pour redonner un nouveau souffle à votre
+							projet&nbsp;?<br>
 							Contactez notre équipe&nbsp;!
 						</h2>
 						<div class="col-sm-12 text-center">
@@ -389,7 +393,7 @@
 		</main>
 		<!--  MAIN end / fin -->
 		<!-- Footer - bloc-8 -->
-		<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8" >
+		<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 			<div class="container bloc-sm">
 				<div class="row">
 					<div class="col-sm-12">
@@ -400,7 +404,8 @@
 						<div class="row row-no-gutters social">
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a aria-label="Cliquez pour nous rejoindre sur Twitter" class="social" href="index.html"><span
+									<a aria-label="Cliquez pour nous rejoindre sur Twitter"
+										class="social" href="index.html"><span
 											class="fa fa-twitter icon-md"></span>
 										<p class="tc-black soulignement">Twitter
 										</p>
@@ -409,7 +414,8 @@
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a aria-label="Cliquez pour nous rejoindre sur Facebook" class="social" href="index.html"><span
+									<a aria-label="Cliquez pour nous rejoindre sur Facebook"
+										class="social" href="index.html"><span
 											class="fa fa-facebook icon-md"></span>
 										<p class="tc-black soulignement">
 											Facebook</p>
@@ -418,7 +424,8 @@
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a aria-label="Cliquez pour nous rejoindre sur Dribbble" class="social" href="index.html"><span
+									<a aria-label="Cliquez pour nous rejoindre sur Dribbble"
+										class="social" href="index.html"><span
 											class="fa fa-dribbble icon-md"></span>
 										<p class="tc-black soulignement">
 											Dribbble</p>
@@ -427,7 +434,8 @@
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a aria-label="Cliquez pour nous rejoindre sur Instagram" class="social" href="index.html"><span
+									<a aria-label="Cliquez pour nous rejoindre sur Instagram"
+										class="social" href="index.html"><span
 											class="fa fa-instagram icon-md"></span>
 										<p class="tc-black soulignement">
 											Instagram</p>
