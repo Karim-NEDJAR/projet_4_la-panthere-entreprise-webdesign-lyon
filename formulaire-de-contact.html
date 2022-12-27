@@ -5,6 +5,12 @@
 	<meta name="description"
 		content="Pour une collaboration efficace avec l'entreprise de web design La Panthère, joignez dès maintenant notre équipe de designers pour leur expliquer votre projet et leur préciser vos attentes. Il suffit juste de renseigner le formulaire de contact sur cette page.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	 <!-- Content Security Policy pour se prémunir des attaques XSS et et les injections de contenu
+		à cause des vulnérabilités introduites par l'ancienneté des scripts bootstrap et jQuery
+	ajouter au fur et à mesure les domaines autorisés à fournir des ressources -->
+	 <meta http-equiv="Content-Security-Policy" content="default-src 'self' ; script-src 'self' 'unsafe-inline'; img-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self' " />
+
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 	<!-- remplacement de favicon.jpg en favicon.ico, de  image/png en   image/x-icon, 
 		et suppression de shortcut  parmi les valeurs de rel -->
@@ -168,7 +174,7 @@
 			<!-- bloc-7  SECTION FORMULAIRE   END -->
 
 			<!-- ScrollToTop Button -->
-			<a aria-label="Aller en haut de la page"
+			<a role="navigation" aria-label="Aller en haut de la page"
 				class="bloc-button btn btn-d scrollToTop"
 				onclick="scrollToTarget('1')"><span
 					class="fa fa-chevron-up"></span></a>
